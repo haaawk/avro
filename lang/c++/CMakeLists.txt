@@ -54,7 +54,7 @@ if (WIN32 AND NOT CYGWIN AND NOT MSYS)
         -DBOOST_ALL_NO_LIB)
 else()
 # Replease c++11 with c++17 below in case C++ 17 should be used
-    add_definitions(-std=c++11 -fPIC)
+    add_definitions(-std=c++20 -fPIC)
 endif()
 
 if (CMAKE_COMPILER_IS_GNUCXX)
